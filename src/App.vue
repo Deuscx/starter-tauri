@@ -5,10 +5,10 @@ import Greet from "./components/Greet.vue";
 </script>
 
 <template>
-  <div class="container">
+  <div class="container" flex="~ items-center col" p="t-20">
     <h1>Welcome to Tauri!</h1>
 
-    <div class="row">
+    <div class="flex">
       <a href="https://vitejs.dev" target="_blank">
         <img src="/vite.svg" class="logo vite" alt="Vite logo" />
       </a>
