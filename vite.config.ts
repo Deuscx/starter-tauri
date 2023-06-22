@@ -4,6 +4,7 @@ import path from 'path'
 import UnoCSS from 'unocss/vite'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import Pages from 'vite-plugin-pages'
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
@@ -14,6 +15,9 @@ export default defineConfig(async () => ({
   },
   plugins: [
     vue(),
+    // https://github.com/hannoeru/vite-plugin-pages
+    Pages(),
+    
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
       imports: [
