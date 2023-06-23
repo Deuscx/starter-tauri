@@ -18,6 +18,10 @@
         "open": true
       }
     },
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true
+    },
     "bundle": {
       "active": true,
       "targets": "all",
@@ -39,7 +43,8 @@
         "resizable": true,
         "title": "starter-tauri",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "label": "starter-tauri"
       }
     ]
   }
