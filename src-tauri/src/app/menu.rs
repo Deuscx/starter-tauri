@@ -100,6 +100,18 @@ pub fn system_tray_handle(app: &tauri::AppHandle, event: SystemTrayEvent) {
                 let _res = app.save_window_state(StateFlags::all());
                 std::process::exit(0);
             }
+            "about" =>{
+                let _aboutWindow = WindowBuilder::new(
+                    app,
+                    "about",
+                    WindowUrl::App("/about".into()),
+                )
+                .resizable(true)
+                .title("About")
+                .inner_size(600.0, 400.0)
+                .build()
+                .expect("can't open about!");
+            }
             _ => {}
         }
     };
