@@ -101,7 +101,7 @@ pub fn system_tray_handle(app: &tauri::AppHandle, event: SystemTrayEvent) {
                 std::process::exit(0);
             }
             "about" =>{
-                let _aboutWindow = WindowBuilder::new(
+                let _about_window = WindowBuilder::new(
                     app,
                     "about",
                     WindowUrl::App("/about".into()),
