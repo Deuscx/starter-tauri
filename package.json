@@ -1,7 +1,7 @@
 {
   "name": "starter-tauri",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "packageManager": "pnpm@8.6.1",
   "private": true,
   "scripts": {
@@ -9,7 +9,8 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "tauri": "tauri",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "release": "bumpp"
   },
   "dependencies": {
     "@tauri-apps/api": "^1.4.0",
@@ -24,6 +25,7 @@
     "@types/node": "^20.3.1",
     "@unocss/reset": "^0.53.1",
     "@vitejs/plugin-vue": "^4.2.3",
+    "bumpp": "^9.1.1",
     "lint-staged": "^13.2.2",
     "simple-git-hooks": "^2.8.1",
     "typescript": "^5.1.3",
