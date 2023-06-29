@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "starter-tauri",
-    "version": "0.0.0"
+    "version": "../package.json"
   },
   "tauri": {
     "allowlist": {
@@ -50,7 +50,7 @@
     "updater": {
       "active": true,
       "dialog": true,
-      "endpoints": ["https://starter-monorepo.github.io/starter-tauri/install.json"],
+      "endpoints": ["https://github.com/starter-monorepo/starter-tauri/releases/latest/download/latest.json"],
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDE0MkU3M0JDRTI2NUM1MjMKUldRanhXWGl2SE11RkllT05xOTcrT2QzcERQWXFFWDIwYUdSbXhOR0lVejE5RE5UUUFpY0swdVIK"
     }
   }

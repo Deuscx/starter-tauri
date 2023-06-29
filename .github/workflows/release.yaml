@@ -63,12 +63,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Deploy install.json
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./updater
-          force_orphan: true
+      # - name: Deploy install.json
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./updater
+      #     force_orphan: true
       # - run: npx changelogithub
       #   env:
       #     GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
