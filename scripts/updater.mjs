@@ -1,6 +1,7 @@
 // scripts/updater.mjs
 
 import fs from 'node:fs'
+import process from 'node:process'
 import fetch from 'node-fetch'
 import { context, getOctokit } from '@actions/github'
 

@@ -1,4 +1,5 @@
 import path from 'node:path'
+import process from 'node:process'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
@@ -8,7 +9,7 @@ import Pages from 'vite-plugin-pages'
 import Devtools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
-export default defineConfig(async () => ({
+export default defineConfig({
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
@@ -60,4 +61,4 @@ export default defineConfig(async () => ({
     // produce sourcemaps for debug builds
     sourcemap: !!process.env.TAURI_DEBUG,
   },
-}))
+})
